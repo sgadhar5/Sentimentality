@@ -9,7 +9,7 @@ import streamlit as st
 df = pd.read_csv('data.csv')
 
 # Preprocess and split the data
-X_train, X_test, y_train, y_test = train_test_split(df['Sentence'], df['Sentiment'], test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(df['sentence'], df['sentiment'], test_size=0.2, random_state=42)
 
 # Vectorize the text
 vectorizer = CountVectorizer()
